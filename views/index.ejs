@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "/styles/styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xns2gbc.css">
+
+    <!-- J QUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- J QUERY -->
+
+    <title>Noah Johnson</title>
+</head>
+<body>
+
+    <script>
+        $(document).ready(function(){
+            $("#intro").animate({left: "-=1000px"}, 800);
+            $("#job").animate({right: "-=1000px"}, 800);
+            $("#view-work").delay(1000).animate({top: '-=100px', opacity: "1"}, 500);
+
+            $("#about-title").hover(function (){
+                $("#about-me-over").animate({width: '+=100%'}, "200");
+            }, function(){
+                $("#about-me-over").animate({width: '-=100%'}, "200");
+            });
+
+            $("#project-title").hover(function (){
+                $("#project-over").animate({width: '+=100%'}, 300);
+            }, function(){
+                $("#project-over").animate({width: '-=100%'}, 300);
+            });
+
+            $("#tickr-title").hover(function (){
+                $("#tickr-over").animate({width: '+=100%'}, 300);
+            }, function(){
+                $("#tickr-over").animate({width: '-=100%'}, 300);
+            });
+
+            $("#tickr-live-title").hover(function (){
+                $("#tickr-live-over").animate({width: '+=100%'}, 300);
+            }, function(){
+                $("#tickr-live-over").animate({width: '-=100%'}, 300);
+            });
+
+            $("#tickr-git-title").hover(function (){
+                $("#tickr-git-over").animate({width: '+=100%'}, 300);
+            }, function(){
+                $("#tickr-git-over").animate({width: '-=100%'}, 300);
+            });
+
+            $("#dreamlock-title").hover(function (){
+                $("#dreamlock-over").animate({width: '+=100%'}, 300);
+            }, function(){
+                $("#dreamlock-over").animate({width: '-=100%'}, 300);
+            });
+
+            $("#dreamlock-live-title").hover(function (){
+                $("#dreamlock-live-over").animate({width: '+=100%'}, 300);
+            }, function(){
+                $("#dreamlock-live-over").animate({width: '-=100%'}, 300);
+            });
+
+            $("#dreamlock-git-title").hover(function (){
+                $("#dreamlock-git-over").animate({width: '+=100%'}, 300);
+            }, function(){
+                $("#dreamlock-git-over").animate({width: '-=100%'}, 300);
+            });
+
+            $("#tickr-back").hover(function () {
+                $("#tickr-back").addClass("active");
+            });
+
+            $("#dreamlock-back").hover(function () {
+                $("#dreamlock-back").addClass("active");
+            });
+
+            $("#view-work").click(function (){
+                const targetOffset = $("#about").offset().top;
+                window.scrollTo({
+                    top: targetOffset,
+                    behavior: "smooth"
+                });
+            });
+        });
+    </script>
+
+    <section>
+        <div id = "landing-page">
+            <img id = "profile-pic" src = "images/noahCrop.png">
+            <p id = "intro">Hey, I'm Noah.<p>
+            <p id = "job">I'm a full stack web developer.</p>
+            <button id = "view-work">View my work ↓</button>
+        </div>
+    </section>
+    <section id = "about">
+        <div id = "about-title">
+            <p id = "about-me">ABOUT ME</p>
+            <div id = "about-me-under"></div>
+            <div id = "about-me-over"></div>
+        </div>
+        <div id = "about-main">
+            <div id = "about-col1">
+                <img id = "noah-ysu" class="resizeable-image" src = "images/noah-ysu-crop.jpg">
+                <p id = "noah-text">As a second-year Computer Science student and track and field athlete at Youngstown State University, I thrive in diverse environments.
+                    Passionate about full-stack development, I constantly explore new frameworks and tools to push boundaries and create impactful solutions. 
+                    With a strong interest in entrepreneurship, I'm working to launch an inspiring startup and touch the world with my software. Outside of coding and running, 
+                    I enjoy quality time with friends and family while pursuing my faith.</p>
+            </div>
+            <div id = "about-col2">
+                <div class = "grid-tools grid-side" id = "col2-col1">
+                    <div class = "tools"><div class = "s1" ><img class = "resizeable-image logo" src = "images/html-logo.png"></div></div>
+                    <div class = "tools"><div class = "s1" ><img class = "resizeable-image logo" src = "images/react-logo.png"></div></div>
+                    <div class = "tools"><div class = "s1" ><img class = "resizeable-image logo" src = "images/jquery-logo.png"></div></div>
+                </div>
+                <div class = "grid-tools" id = "col2-col2">
+                    <div class = "tools middle-tool"><div class = "s2" ><img class = "resizeable-image logo" src = "images/js-logo.webp"></div></div>
+                    <div class = "tools middle-tool"><div class = "s2" ><img class = "resizeable-image logo" src = "images/node-logo.png"></div></div>
+                    <div class = "tools middle-tool"><div class = "s2" ><img class = "resizeable-image logo" src = "images/psql-logo.png"></div></div>
+                    <div class = "tools middle-tool"><div class = "s2" ><img class = "resizeable-image logo" src = "images/git-logo.png"></div></div>
+                </div>
+                <div class = "grid-tools grid-side" id = "col2-col3">
+                    <div class = "tools"><div class = "s1" ><img class = "resizeable-image logo" src = "images/css-logo.png"></div></div>
+                    <div class = "tools"><div class = "s1" ><img class = "resizeable-image logo" src = "images/express-logo.png"></div></div>
+                    <div class = "tools"><div class = "s1" ><img class = "resizeable-image logo" src = "images/pup-logo.png"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id = "projects">
+        <div id = "project-title">
+            <p id = "project-head">PROJECTS</p>
+            <div id = "project-under"></div>
+            <div id = "project-over"></div>
+        </div>
+        <div id = "tickr">
+            <div class = "back" id = "tickr-back">
+                <img id = "tickr-ss" src = "images/tickr-ss1.png">
+            </div>
+            <div id = "tickr-right">
+                <div id = "tickr-title">
+                    <p id = "tickr-head">tickr.</p>
+                    <div id = "tickr-under"></div>
+                    <div id = "tickr-over"></div>
+                </div>
+                <p id = "tickr-desc">Full stack, CRUD, todo list application built with Node.js, Express.js, and PostgreSQL, and deployed using render.com.</p>
+                <a id = "tickr-link" href = "https://tickr.onrender.com/">
+                    <div id = "tickr-live-title">
+                        <p class = "project-link project-live" id = "tickr-live">LIVE APP</p>
+                        <div id = "tickr-live-under"></div>
+                        <div id = "tickr-live-over"></div>
+                    </div>
+                </a>
+                <a href = "https://github.com/noahjohnso-n/tickr" id = "tickr-github">
+                    <div id = "tickr-git-title">
+                        <p class = "project-link project-git" id = "tickr-git">LEARN MORE</p>
+                        <div id = "tickr-git-under"></div>
+                        <div id = "tickr-git-over"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div id = "dreamlock">
+            <div id = "dreamlock-left">
+                <div id = "dreamlock-title">
+                    <p id = "dreamlock-head">Dreamlock.</p>
+                    <div id = "dreamlock-under"></div>
+                    <div id = "dreamlock-over"></div>
+                </div>
+                <p id = "dreamlock-desc">Full stack, CRUD, todo list application built with Node.js, Express.js, and PostgreSQL, and deployed using render.com.</p>
+                <a id = "dreamlock-link" href = "https://tickr.onrender.com/">
+                    <div id = "dreamlock-live-title">
+                        <p class = "project-link project-live" id = "dreamlock-live">LIVE APP</p>
+                        <div id = "dreamlock-live-under"></div>
+                        <div id = "dreamlock-live-over"></div>
+                    </div>
+                </a>
+                <a href = "https://github.com/noahjohnso-n/tickr" id = "tickr-github">
+                    <div id = "dreamlock-git-title">
+                        <p class = "project-link project-git" id = "dreamlock-git">LEARN MORE</p>
+                        <div id = "dreamlock-git-under"></div>
+                        <div id = "dreamlock-git-over"></div>
+                    </div>
+                </a>
+            </div>
+            <div class = "back" id = "dreamlock-back">
+                <img id = "dreamlock-ss" src = "images/dreamlock-ss.png">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

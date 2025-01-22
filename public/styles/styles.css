@@ -1,0 +1,723 @@
+:root{
+    /* --primary: #FCFDF9; */
+    --primary: #e5e6d9;
+    --white: #ffffff;
+    --light-blue: rgb(75, 193, 232);
+    --dreamp: #6f00ff;
+    --light-secondary: #CFD5BE;
+    --light-tertiary: #92AB9D;
+    --dark-primary: #212529;
+    --dark-secondary: #7A6453;
+}
+
+*{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+h1{
+    margin: 0;
+}
+
+#landing-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary);
+}
+
+#intro{
+    position: relative;
+    left: 1000px;
+    color: var(--dark-primary);
+    font-family: "calluna", serif;
+}
+
+#job{
+    position: relative;
+    right: 1000px;
+    color: var(--dark-primary);
+    font-size: 54px;
+    font-family: "calluna", serif;
+    margin-bottom: 24px;
+}
+
+#profile-pic{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 16px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+#view-work{
+    position: relative;
+    display: flex;
+    opacity: 0;
+    top: 100px;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: "calluna", serif; */
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: var(--light-tertiary);
+    color: var(--white);
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+}
+
+#about{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--dark-primary);
+}
+
+#about-title{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: fit-content;
+}
+
+#about-me{
+    margin-top: 40px;
+    color: var(--primary);
+    font-size: 54px;
+    z-index: 1;
+    letter-spacing: -1px;
+    font-weight: 500;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: "calluna", serif;
+}
+
+#about-me-under{
+    margin-top: -25px;
+    width: 100%;
+    height: 25px;
+    position: relative;
+    left: 20px;
+    z-index: 0;
+    background-color: var(--light-tertiary);
+}
+
+#about-me-over{
+    margin-top: -25px;
+    width: 0;
+    height: 25px;
+    position: relative;
+    left: 20px;
+    z-index: 0;
+    background-color: var(--dark-secondary);
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 100% !important;
+    background-color: var(--primary);
+}
+
+#noah-ysu{
+    height: 200px;
+    width: max-content;
+    margin: 32px;
+    border-radius: 10px;
+}
+
+#noah-text{
+    color: var(--primary);
+    font-family: -apple-system, system-ui,  BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.resizable-image {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+#about-main{
+    flex: 1;
+    width: 100%;
+    display: flex;
+}
+
+@media screen and (max-width: 1000px) { 
+    #about { height: fit-content; } 
+    #about-main { flex-direction: column; justify-content: center;} 
+    #about-col1 { width: 100%; } 
+    #about-col2 { width: 100%; height: fit-content; } 
+    .middle-tool { margin-top: 25px; margin-bottom: 25px; }
+    .logo { width: 90%; }
+    .grid-tools { justify-content: space-around; } 
+    .grid-side { height: 100%; } 
+}
+@media screen and (min-width: 1001px) { 
+    #about { height: 100vh; } 
+    #about-main { flex-direction: row; justify-content: flex-start;} 
+    #about-col1 { width: 50%; } 
+    #about-col2 { width: 50%; } 
+    .logo { width: 100%; }
+    .grid-tools { justify-content: space-around; } 
+    .grid-side {margin-top: 30px; margin-bottom: 30px; } 
+}
+
+#about-col1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#about-col2{
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#col2-col1{
+    display: flex;
+    flex-direction: column;
+}
+
+#col2-col2{
+    display: flex;
+    flex-direction: column;
+}
+
+#col2-col3{
+    display: flex;
+    flex-direction: column;
+}
+
+.tools{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-primary);
+}
+
+.s1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 48%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--primary);
+}
+
+.s2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 42%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--primary);
+}
+
+#project-title{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: fit-content;
+    margin-bottom: 100px;
+}
+
+#project-head{
+    margin-top: 40px;
+    color: var(--dark-primary);
+    font-size: 54px;
+    z-index: 1;
+    letter-spacing: -1px;
+    font-weight: 500;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: "calluna", serif;
+}
+
+#project-under{
+    margin-top: -25px;
+    width: 100%;
+    height: 25px;
+    position: relative;
+    z-index: 0;
+    background-color: var(--light-tertiary);
+}
+
+#project-over{
+    margin-top: -25px;
+    width: 0;
+    height: 25px;
+    position: relative;
+    z-index: 0;
+    background-color: var(--dark-secondary);
+}
+
+#tickr{
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 36px;
+}
+
+#tickr-back{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45%;
+    background-color: var(--dark-secondary);
+    position: relative;
+    z-index: 0;
+    transition: background-color 0.5s ease;
+}
+
+#tickr-back.active{
+    background-color: var(--light-blue);
+}
+
+@media screen and (min-width: 1400px) {
+    #intro { font-size: 72px; }
+    #job { font-size: 54px; }
+    #tickr-back{ height: 500px; width: 905px; }
+    #tickr-head { font-size: 72px; }
+    #tickr-over { height: 15px; margin-top: -15px; }
+    #tickr-under { height: 15px; }
+    #tickr-live-over { height: 15px; margin-top: -15px; }
+    #tickr-live-under { height: 15px; }
+    #tickr-git-under { height: 15px; }
+    #tickr-git-over { height: 15px; margin-top: -15px; }
+    #tickr-desc { font-size: 24px; line-height: 36px; }
+    .project-link { font-size: 36px; }
+    .project-live { margin-top: 24px;}
+    .project-git { margin-top: 36px; }
+    #dreamlock-back { height: 520px; width: 884px; }
+    #dreamlock-head { font-size: 70px; }
+    #dreamlock-over { height: 15px; margin-top: -15px; }
+    #dreamlock-under { height: 15px; }
+    #dreamlock-live-over { height: 15px; margin-top: -15px; }
+    #dreamlock-live-under { height: 15px; }
+    #dreamlock-git-under { height: 15px; }
+    #dreamlock-git-over { height: 15px; margin-top: -45px; }
+    #dreamlock-desc { font-size: 24px; line-height: 36px; }
+}
+
+@media screen and (max-width: 1399px) and (min-width: 1200px) {
+    #intro { font-size: 68px; }
+    #job { font-size: 50px; }
+    #tickr-back{ height: 428.5px; width: 775px; }
+    #tickr-head { font-size: 68px; }
+    #tickr-over { height: 14px; margin-top: -14px; }
+    #tickr-under { height: 14px; }
+    #tickr-live-over { height: 14px; margin-top: -14px; }
+    #tickr-live-under { height: 14px; }
+    #tickr-git-under { height: 14px; }
+    #tickr-git-over { height: 14px; margin-top: -14px; }
+    #tickr-desc { font-size: 22px; line-height: 33px; }
+    .project-link { font-size: 33px; }
+    .project-live { margin-top: 21px;}
+    .project-git { margin-top: 32px; }
+    #dreamlock-back { height: 446px; width: 758px; }
+    #dreamlock-head { font-size: 65px; }
+    #dreamlock-over { height: 14px; margin-top: -14px; }
+    #dreamlock-under { height: 14px; }
+    #dreamlock-live-over { height: 14px; margin-top: -14px; }
+    #dreamlock-live-under { height: 14px; }
+    #dreamlock-git-under { height: 14px; }
+    #dreamlock-git-over { height: 14px; margin-top: -44px; }
+    #dreamlock-desc { font-size: 22px; line-height: 33px; }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1000px) {
+    #intro { font-size: 64px; }
+    #job { font-size: 46px; }
+    #tickr-back{ height: 357px; width: 646px; }
+    #tickr-head { font-size: 64px; }
+    #tickr-under { height: 13px; }
+    #tickr-over { height: 13px; margin-top: -13px; }
+    #tickr-live-over { height: 13px; margin-top: -13px; }
+    #tickr-live-under { height: 13px; }
+    #tickr-git-under { height: 13px; }
+    #tickr-git-over { height: 13px; margin-top: -13px; }
+    #tickr-desc { font-size: 20px; line-height: 30px;}
+    .project-link { font-size: 30px; }
+    .project-live { margin-top: 18px;}
+    .project-git { margin-top: 28px; }
+    #dreamlock-back { height: 371px; width: 631px; }
+    #dreamlock-head { font-size: 55px; }
+    #dreamlock-under { height: 13px; }
+    #dreamlock-over { height: 13px; margin-top: -13px; }
+    #dreamlock-live-over { height: 13px; margin-top: -13px; }
+    #dreamlock-live-under { height: 13px; }
+    #dreamlock-git-under { height: 13px; }
+    #dreamlock-git-over { height: 13px; margin-top: -43px; }
+    #dreamlock-desc { font-size: 20px; line-height: 30px;}
+}
+
+@media screen and (max-width: 999px) and (min-width: 800px) {
+    #intro { font-size: 60px; }
+    #job { font-size: 42px; }
+    #tickr-back{ height: 340px; width: 615px; }
+    #tickr-head { font-size: 60px; }
+    #tickr-under { height: 12px; }
+    #tickr-over { height: 12px; margin-top: -12px; }
+    #tickr-live-over { height: 12px; margin-top: -12px; }
+    #tickr-live-under { height: 12px; }
+    #tickr-git-over { height: 12px; margin-top: -12px; }
+    #tickr-git-under { height: 12px; }
+    #tickr-desc { font-size: 18px; line-height: 27px;}
+    .project-link { font-size: 27px; }
+    .project-live { margin-top: 15px;}
+    .project-git { margin-top: 24px; }
+    #dreamlock-back { height: 297px; width: 505px; }
+    #dreamlock-head { font-size: 50px; }
+    #dreamlock-under { height: 12px; }
+    #dreamlock-over { height: 12px; margin-top: -12px; }
+    #dreamlock-live-over { height: 12px; margin-top: -12px; }
+    #dreamlock-live-under { height: 12px; }
+    #dreamlock-git-over { height: 12px; margin-top: -42px; }
+    #dreamlock-git-under { height: 12px; }
+    #dreamlock-desc { font-size: 18px; line-height: 27px;}
+}
+
+@media screen and (max-width: 799px) and (min-width: 600px) {
+    #intro { font-size: 56px; }
+    #job { font-size: 38px; }
+    #tickr-back{ height: 255px; width: 461px; }
+    #tickr-head { font-size: 56px; }
+    #tickr-under { height: 11px; }
+    #tickr-over { height: 11px; margin-top: -11px; }
+    #tickr-live-over { height: 11px; margin-top: -11px; }
+    #tickr-live-under { height: 11px; }
+    #tickr-git-over { height: 11px; margin-top: -11px; }
+    #tickr-git-under { height: 11px; }
+    #tickr-desc { font-size: 16px; line-height: 24px;}
+    .project-link { font-size: 24px; }
+    .project-live { margin-top: 12px;}
+    .project-git { margin-top: 20px; }
+    #dreamlock-back { height: 223px; width: 379px; }
+    #dreamlock-head { font-size: 45px; }
+    #dreamlock-under { height: 11px; }
+    #dreamlock-over { height: 11px; margin-top: -11px; }
+    #dreamlock-live-over { height: 11px; margin-top: -11px; }
+    #dreamlock-live-under { height: 11px; }
+    #dreamlock-git-over { height: 11px; margin-top: -41px; }
+    #dreamlock-git-under { height: 11px; }
+    #dreamlock-desc { font-size: 16px; line-height: 24px;}
+}
+
+@media screen and (max-width: 599px) and (min-width: 400px) {
+    #intro { font-size: 52px; }
+    #job { font-size: 31px; }
+    #tickr-back{ height: 170px; width: 308px; }
+    #tickr-head { font-size: 52px; }
+    #tickr-under { height: 10px; }
+    #tickr-over { height: 10px; margin-top: -10px; }
+    #tickr-live-over { height: 10px; margin-top: -10px; }
+    #tickr-live-under { height: 10px; }
+    #tickr-git-over { height: 10px; margin-top: -10px;}
+    #tickr-git-under { height: 10px; }
+    #tickr-desc { font-size: 14px; line-height: 21px;}
+    .project-link { font-size: 21px; }
+    .project-live { margin-top: 9px;}
+    .project-git { margin-top: 16px; }
+    #dreamlock-back { height: 149px; width: 253px; }
+    #dreamlock-head { font-size: 45px; }
+    #dreamlock-under { height: 10px; }
+    #dreamlock-over { height: 10px; margin-top: -10px; }
+    #dreamlock-live-over { height: 10px; margin-top: -10px; }
+    #dreamlock-live-under { height: 10px; }
+    #dreamlock-git-over { height: 10px; margin-top: -40px;}
+    #dreamlock-git-under { height: 10px; }
+    #dreamlock-desc { font-size: 14px; line-height: 21px;}
+}
+
+@media screen and (max-width: 399px) and (min-width: 300px) {
+    #intro { font-size: 48px; }
+    #job { font-size: 24px; }
+    #tickr-back{ height: 127px; width: 231px; }
+    #tickr-head { font-size: 48px; }
+    #tickr-under { height: 9px; }
+    #tickr-over { height: 9px; margin-top: -9px; }
+    #tickr-live-over { height: 9px; margin-top: -9px; }
+    #tickr-live-under { height: 9px; }
+    #tickr-git-over { height: 9px; margin-top: -9px; }
+    #tickr-git-under { height: 9px; }
+    #tickr-desc { font-size: 12px; line-height: 18px;}
+    .project-link { font-size: 18px; }
+    .project-live { margin-top: 7px;}
+    .project-git { margin-top: 14px; }
+    #dreamlock-back { height: 111px; width: 189px; }
+    #dreamlock-head { font-size: 40px; }
+    #dreamlock-under { height: 9px; }
+    #dreamlock-over { height: 9px; margin-top: -9px; }
+    #dreamlock-live-over { height: 9px; margin-top: -9px; }
+    #dreamlock-live-under { height: 9px; }
+    #dreamlock-git-over { height: 9px; margin-top: -39px; }
+    #dreamlock-git-under { height: 9px; }
+    #dreamlock-desc { font-size: 12px; line-height: 18px;}
+}
+
+@media screen and (max-width: 1000px) {
+    #project-title { margin-bottom: 60px; }
+    #tickr { flex-direction: column; align-items: center; }
+    #tickr-back { justify-content: center; }
+    #tickr-right { top: 10px !important;  align-items: center !important; margin-left: 0px !important;  }
+    #tickr-desc { text-align: center; }
+    #dreamlock { flex-direction: column-reverse; align-items: center; }
+    #dreamlock-back { justify-content: center !important; }
+    #dreamlock-left { align-items: center !important; }
+    #dreamlock-desc { text-align: center; }
+    #dreamlock-git-under { margin-bottom: 30px; }
+}
+
+#tickr-ss{
+    height: 85%;
+}
+
+#tickr-right{
+    position: relative;
+    top: -20px;
+    flex: 1;
+    height: 75vh;
+    display: flex;
+    margin-left: 40px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#tickr-title{
+    width: fit-content;
+}
+
+#tickr-head{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    color: var(--dark-primary);
+}
+
+#tickr-under{
+    margin-top: -5px;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    background-color: var(--light-tertiary);
+}
+
+#tickr-over{
+    width: 0;
+    position: relative;
+    z-index: 0;
+    background-color: var(--light-blue);
+}
+
+#tickr-desc{
+    margin-top: 24px;
+    width: 90%;
+    text-wrap: wrap;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--dark-primary);
+}
+
+#tickr-live-title{
+    width: fit-content;
+}
+
+#tickr-live{
+    color: var(--dark-primary);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+#tickr-live-under{
+    background-color: var(--light-tertiary);
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+#tickr-live-over{
+    width: 0;
+    position: relative;
+    z-index: 0;
+    background-color: var(--light-blue);
+}
+
+#tickr-link{
+    text-decoration: none;
+}
+
+#tickr-git-title{
+    width: fit-content;
+}
+
+#tickr-git{
+    color: var(--dark-primary);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+#tickr-git-under{
+    background-color: var(--light-tertiary);
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+#tickr-git-over{
+    width: 0;
+    position: relative;
+    z-index: 0;
+    background-color: var(--light-blue);
+}
+
+#tickr-github{
+    text-decoration: none;
+}
+
+#dreamlock{
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 36px;
+}
+
+#dreamlock-back{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-color: var(--dark-secondary);
+    position: relative;
+    z-index: 0;
+    transition: background-color 0.5s ease;
+}
+
+#dreamlock-back.active{
+    background-color: var(--dreamp);
+}
+
+#dreamlock-left{
+    flex: 1;
+    height: 75vh;
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+    align-items: flex-start;
+    flex-direction: column;
+}f
+
+#dreamlock-title{
+    width: fit-content;
+    margin-right: 10px;
+}
+
+#dreamlock-head{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    color: var(--dark-primary);
+}
+
+#dreamlock-under{
+    margin-top: -5px;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    background-color: var(--light-tertiary);
+}
+
+#dreamlock-over{
+    width: 0;
+    position: relative;
+    z-index: 0;
+    background-color: var(--dreamp);
+}
+
+#dreamlock-desc{
+    margin-top: 24px;
+    width: 90%;
+    text-wrap: wrap;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--dark-primary);
+}
+
+#dreamlock-live-title{
+    width: fit-content;
+}
+
+#dreamlock-live{
+    color: var(--dark-primary);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+#dreamlock-live-under{
+    background-color: var(--light-tertiary);
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+#dreamlock-live-over{
+    width: 0%;
+    position: relative;
+    z-index: 0;
+    background-color: var(--dreamp);
+}
+
+#dreamlock-link{
+    text-decoration: none;
+}
+
+#dreamlock-git-title{
+    width: fit-content;
+}
+
+#dreamlock-git{
+    color: var(--dark-primary);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+#dreamlock-git-under{
+    background-color: var(--light-tertiary);
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+#dreamlock-git-over{
+    width: 0;
+    position: relative;
+    z-index: 0;
+    background-color: var(--dreamp);
+}
+
+#dreamlock-github{
+    text-decoration: none;
+}
+
+#dreamlock-ss{
+    height: 85%;
+}
