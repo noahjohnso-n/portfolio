@@ -156,7 +156,6 @@ h1{
 }
 
 #about-main{
-    flex: 1;
     width: 100%;
     display: flex;
 }
@@ -173,7 +172,7 @@ h1{
 }
 @media screen and (min-width: 1001px) { 
     #about { height: 100vh; } 
-    #about-main { flex-direction: row; justify-content: flex-start;} 
+    #about-main { flex-direction: row; justify-content: flex-start; height: fit-content;} 
     #about-col1 { width: 50%; } 
     #about-col2 { width: 50%; } 
     .logo { width: 100%; }
@@ -320,6 +319,7 @@ h1{
     #dreamlock-git-under { height: 15px; }
     #dreamlock-git-over { height: 15px; margin-top: -45px; }
     #dreamlock-desc { font-size: 24px; line-height: 36px; }
+    #about-main { height: 1250px; }
 }
 
 @media screen and (max-width: 1399px) and (min-width: 1200px) {
@@ -346,6 +346,7 @@ h1{
     #dreamlock-git-under { height: 14px; }
     #dreamlock-git-over { height: 14px; margin-top: -44px; }
     #dreamlock-desc { font-size: 22px; line-height: 33px; }
+    #about-main { height: 1280px; }
 }
 
 @media screen and (max-width: 1199px) and (min-width: 1000px) {
@@ -372,6 +373,7 @@ h1{
     #dreamlock-git-under { height: 13px; }
     #dreamlock-git-over { height: 13px; margin-top: -43px; }
     #dreamlock-desc { font-size: 20px; line-height: 30px;}
+    #about-main { height: 1290px; }
 }
 
 @media screen and (max-width: 999px) and (min-width: 800px) {
@@ -398,6 +400,7 @@ h1{
     #dreamlock-git-over { height: 12px; margin-top: -42px; }
     #dreamlock-git-under { height: 12px; }
     #dreamlock-desc { font-size: 18px; line-height: 27px;}
+    #about-main { height: 1300px; }
 }
 
 @media screen and (max-width: 799px) and (min-width: 600px) {
@@ -424,6 +427,7 @@ h1{
     #dreamlock-git-over { height: 11px; margin-top: -41px; }
     #dreamlock-git-under { height: 11px; }
     #dreamlock-desc { font-size: 16px; line-height: 24px;}
+    #about-main { height: 1310px; }
 }
 
 @media screen and (max-width: 599px) and (min-width: 400px) {
@@ -450,6 +454,7 @@ h1{
     #dreamlock-git-over { height: 10px; margin-top: -40px;}
     #dreamlock-git-under { height: 10px; }
     #dreamlock-desc { font-size: 14px; line-height: 21px;}
+    #about-main { height: 1320px; }
 }
 
 @media screen and (max-width: 399px) and (min-width: 300px) {
@@ -476,6 +481,7 @@ h1{
     #dreamlock-git-over { height: 9px; margin-top: -39px; }
     #dreamlock-git-under { height: 9px; }
     #dreamlock-desc { font-size: 12px; line-height: 18px;}
+    #about-main { height: 1330px; }
 }
 
 @media screen and (max-width: 1000px) {
