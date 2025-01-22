@@ -166,7 +166,7 @@ h1{
     #about-main { flex-direction: column; justify-content: center;} 
     #about-col1 { width: 100%; } 
     #about-col2 { width: 100%; height: fit-content; } 
-    .middle-tool { margin-top: 25px; margin-bottom: 25px; }
+    .middle-tool { margin-top: 30px; margin-bottom: 30px; }
     .logo { width: 90%; }
     .grid-tools { justify-content: space-around; } 
     .grid-side { height: 100%; } 
@@ -479,6 +479,7 @@ h1{
 }
 
 @media screen and (max-width: 1000px) {
+    #view-work { font-size: 20px; }
     #project-title { margin-bottom: 60px; }
     #tickr { flex-direction: column; align-items: center; }
     #tickr-back { justify-content: center; }
