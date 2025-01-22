@@ -5,7 +5,8 @@
     --light-blue: rgb(75, 193, 232);
     --dreamp: #6f00ff;
     --light-secondary: #CFD5BE;
-    --light-tertiary: #92AB9D;
+    /* --light-tertiary: #92AB9D; */
+    --light-tertiary: rgb(177, 70, 84);
     --dark-primary: #212529;
     --dark-secondary: #7A6453;
 }
