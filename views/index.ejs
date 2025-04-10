@@ -50,6 +50,10 @@
                 $("#tickr-git-over").animate({width: '-=100%'}, 300);
             });
 
+
+
+
+
             $("#dreamlock-title").hover(function (){
                 $("#dreamlock-over").animate({width: '+=100%'}, 300);
             }, function(){
@@ -76,6 +80,7 @@
                 $("#dreamlock-back").addClass("active");
             });
 
+
             $("#view-work").click(function (){
                 const targetOffset = $("#about").offset().top;
                 window.scrollTo({
@@ -83,6 +88,65 @@
                     behavior: "smooth"
                 });
             });
+
+
+
+
+
+
+            $("#dentist-title").hover(function (){
+                $("#dentist-over").animate({width: '+=100%'}, 300);
+            }, function(){
+                $("#dentist-over").animate({width: '-=100%'}, 300);
+            });
+
+            $("#dentist-live-title").hover(function (){
+                $("#dentist-live-over").animate({width: '+=100%'}, 300);
+            }, function(){
+                $("#dentist-live-over").animate({width: '-=100%'}, 300);
+            });
+
+            $("#dentist-git-title").hover(function (){
+                $("#dentist-git-over").animate({width: '+=100%'}, 300);
+            }, function(){
+                $("#dentist-git-over").animate({width: '-=100%'}, 300);
+            });
+
+            $("#dentist-back").hover(function () {
+                $("#dentist-back").addClass("active");
+            });
+
+
+
+
+
+
+            $("#vayora-title").hover(function (){
+                $("#vayora-over").animate({width: '+=100%'}, 300);
+            }, function(){
+                $("#vayora-over").animate({width: '-=100%'}, 300);
+            });
+
+            $("#vayora-live-title").hover(function (){
+                $("#vayora-live-over").animate({width: '+=100%'}, 300);
+            }, function(){
+                $("#vayora-live-over").animate({width: '-=100%'}, 300);
+            });
+
+            $("#vayora-git-title").hover(function (){
+                $("#vayora-git-over").animate({width: '+=100%'}, 300);
+            }, function(){
+                $("#vayora-git-over").animate({width: '-=100%'}, 300);
+            });
+
+            $("#vayora-back").hover(function () {
+                $("#vayora-back").addClass("active");
+            });
+
+            $("#vayora-back").hover(function () {
+                $("#vayora-back").addClass("active");
+            });
+
         });
     </script>
 
@@ -169,7 +233,7 @@
                     <div id = "dreamlock-under"></div>
                     <div id = "dreamlock-over"></div>
                 </div>
-                <p id = "dreamlock-desc">Full stack, CRUD, todo list application built with Node.js, Express.js, and PostgreSQL, and deployed using render.com.</p>
+                <p id = "dreamlock-desc">Full stack, pomodoro and productivity timer built using Node.js, Express.js, and deployed using render.com.</p>
                 <a id = "dreamlock-link" href = "https://dreamlock.onrender.com">
                     <div id = "dreamlock-live-title">
                         <p class = "project-link project-live" id = "dreamlock-live">LIVE APP</p>
@@ -189,6 +253,64 @@
                 <img id = "dreamlock-ss" src = "images/dreamlock-ss.png">
             </div>
         </div>
+
+        <div id = "dentist">
+            <div class = "back" id = "dentist-back">
+                <img id = "dentist-ss" src = "images/react-ss.png">
+            </div>
+            <div id = "dentist-right">
+                <div id = "dentist-title">
+                    <p id = "dentist-head">Dental Website.</p>
+                    <!-- <div id = "dentist-under"></div>
+                    <div id = "dentist-over"></div> -->
+                </div>
+                <p id = "dentist-desc">MERN stack application, dental business website with automated scheduling agent.</p>
+                <a id = "dentist-link" href = "https://react-dental.onrender.com/">
+                    <div id = "dentist-live-title">
+                        <p class = "project-link project-live" id = "dentist-live">LIVE APP</p>
+                        <div id = "dentist-live-under"></div>
+                        <div id = "dentist-live-over"></div>
+                    </div>
+                </a>
+                <a href = "https://github.com/noahjohnso-n/DentalTemplate1" id = "dentist-github">
+                    <div id = "dentist-git-title">
+                        <p class = "project-link project-git" id = "dentist-git">LEARN MORE</p>
+                        <div id = "dentist-git-under"></div>
+                        <div id = "dentist-git-over"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+        <div id = "vayora">
+            <div id = "vayora-left">
+                <div id = "vayora-title">
+                    <p id = "vayora-head">Vayora</p>
+                    <div id = "vayora-under"></div>
+                    <div id = "vayora-over"></div>
+                </div>
+                <p id = "vayora-desc">AI vacation / trip suggestion generator. </p>
+                <a id = "vayora-link" href = "https://vayora.onrender.com">
+                    <div id = "vayora-live-title">
+                        <p class = "project-link project-live" id = "vayora-live">LIVE APP</p>
+                        <div id = "vayora-live-under"></div>
+                        <div id = "vayora-live-over"></div>
+                    </div>
+                </a>
+                <a href = "https://vayora.onrender.com" id = "tickr-github">
+                    <div id = "vayora-git-title">
+                        <p class = "project-link project-git" id = "vayora-git">LEARN MORE</p>
+                        <div id = "vayora-git-under"></div>
+                        <div id = "vayora-git-over"></div>
+                    </div>
+                </a>
+            </div>
+            <div class = "back" id = "vayora-back">
+                <img id = "vayora-ss" src = "images/vayora-ss.png">
+            </div>
+        </div>
+
     </section>
 </body>
 </html>
